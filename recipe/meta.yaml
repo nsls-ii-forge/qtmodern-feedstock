@@ -1,19 +1,19 @@
 {% set name = "qtmodern" %}
-{% set version = "0.1.4" %}
-{% set sha256 = "a2acb8bf01ca3cd7edf4d9eca25a5f29cee3ddd44fc2a3b2e5511d1bc5c37932" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "d433a54fbb400d49790aff65d35f203de2a8cc67795ac5bb04c5e766433fafae" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
-  noarch: "python"
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv "
+  noarch: python
+  script: '{{ PYTHON }} -m pip install . --no-deps -vv '
 
 requirements:
   host:
@@ -31,8 +31,8 @@ test:
     - qtmodern.windows
 
 about:
-  home: "https://www.github.com/gmarull/qtmodern"
-  license: "MIT"
-  license_family: "MIT"
+  home: https://www.github.com/gmarull/qtmodern
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
-  summary: "Qt Widgets Modern User Interface"
+  summary: Qt Widgets Modern User Interface
