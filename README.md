@@ -5,7 +5,7 @@ Home: https://www.github.com/gmarull/qtmodern
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Qt Widgets Modern User Interface
 
